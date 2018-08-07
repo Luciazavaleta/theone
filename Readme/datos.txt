@@ -1,0 +1,8 @@
+A tener en cuenta:
+Se busca realizar una aplicacion que tenga informacion sobre impuestos, noticias y calculos de los mismos.
+Para realizar esto se debe tener en cuenta que los calculos se basan en multiplicaciones, sumas, restas y divisiones, por lo tanto lo unico a notar es cambiar las variables de porcentaje.
+Ejemplo a tomar en cuenta:
+https://github.com/MorellatoAriel/sistema-de-notas/blob/master/sistemaDeNotas/core/views.py
+
+Vale destacar que a esto se lo considera plagio.
+Saludos.
