@@ -4,7 +4,7 @@ from .models import Post
 from .forms import PostForm
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    posts = Post.objects.all()
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
@@ -36,3 +36,11 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def pagar(request):
+    posts = Post.objects.filter(clasificacion="A pagar")
+    return render(request, "blog/pagar.html", {'posts': posts})
+
+def pagos(request):
+    posts = Post.objects.filter(clasificacion="Pagos")
+    return render(request, "blog/pagos.html", {"posts": posts})
